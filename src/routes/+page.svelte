@@ -23,9 +23,7 @@
     onMount(() => {
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         supportsSpeech = !!SpeechRecognition;
-        if(SpeechRecognition) {
-            recognition = new SpeechRecognition();
-        }
+        if(SpeechRecognition)  recognition = new SpeechRecognition();
     });
 
     function handleVoiceBtn() {
